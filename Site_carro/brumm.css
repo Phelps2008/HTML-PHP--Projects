@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(195, 236, 223);
+  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards {
+  width: 1300px;
+  margin: 0 auto;
+  border: solid 1px black;
+}
+.cards > div {
+  background-color: azure;
+  border-radius: 52px;
+  padding: 1.25rem;
+  text-align: center;
+  border: 3px solid #eee;
+  box-shadow: 0 4px 12px black;
+  width: 500px;
+  float: left;
+  margin: 40px;
+}
+.cards > div > img {
+  height: 300px;
+}
