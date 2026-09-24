@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VF-</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <div class="topo">
+        <img src="Img/Logotipo-removebg-preview.png" alt="">
+    <h2>VF-Commerce</h2>
+    
+<div class="burger">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+<ul class="menu">
+        <a href="https://www.samsung.com/br/offer/deals/?cid=br_pd_search_google_multi_ecommerce_22446442559-search-institucional-mx-aon-hq-gads-monks_kwd-brand_176773745006-samsung_conversion&keeplink=true&gad_source=1&gad_campaignid=22446442559&gbraid=0AAAAADJayZ0K58-rrJk5Ggk0s5FOOK2z0&gclid=EAIaIQobChMIgcjFtI2lkwMVYlhIAB1NOyoiEAAYASAAEgI-MvD_BwE" target="_blank">
+           <li>Sansung</li></a>
+
+        <a href="https://www.philco.com.br/tvs?srsltid=AfmBOop_LjZ06tsaZiINk2WBNxfjymU79zDDfSRAJSi_Xfgvei3hsdxX" target="_blank">
+            <li>Philco</li></a>
+            
+       <a href="https://www.lg.com/br/?srsltid=AfmBOoqdp3EMTkeLdM7TVoJ567pYliYbP8MKMvy5Njf38KHxmnSK56Q5" target="_blank">
+              <li>LG </li></a>
+   
+        <a href="https://www.sony.com.br/electronics/tvs-4k" target="_blank">
+                <li>Sony</li></a>
+     
+        <a href="https://www.mibrasil.com.br/casa-inteligente/tv-inteligente" target="_blank">
+            <li>Xiomi</li></a>
+
+        <a href="https://www.tcl.com/br/pt/tvs" target="_blank">
+            <li>TLC</li></a>
+    </ul>
+    </div>
+    
+    <div class="cards">
+        <div>
+            <h1>Xiomi</h1>
+            <img src="Img/Xiaomi tv.jpg" alt="" />
+            <p>O que você precisa saber sobre este produto
+              Tipo de controle remoto: De voz.
+              Resolução máxima de vídeo em Full HD (1920x1080) para uma experiência visual imersiva.
+              Capacidade de armazenamento de 8 GB para instalar diversos aplicativos.
+              Memória RAM de 1 GB para desempenho fluido.
+              Conectividade Wi-Fi dual band 2.4 GHz e 5 GHz para conexões mais rápidas.
+              Controle de voz integrado com Google Assistant para mais comodidade.
+              Compatível com principais aplicativos de streaming, incluindo Netflix e Disney+.</p>
+        </div>
+        <div>
+          <h1>Sansung</h1>
+          <img src="Img/Samsung tv.jpg" alt="" />
+          <p>Este combo Samsung oferece uma experiência imersiva com a Smart TV 75" Crystal UHD 4K (série U8600F/TU8000), com processador 4K, design fino e taxa de 60Hz. Acompanha a Soundbar HW-B400F, que melhora o áudio com 2.0 canais, 40W RMS, woofer integrado e conexão Bluetooth, ideal para graves mais encorpados</p>
+        </div>
+        
+        <div>
+          <h1>TCL</h1>
+          <img src="Img/TCL tv.jpg" alt="" />
+          As Smart TVs QLED 4K da TCL com Google TV
+           (modelos P7K, C645, C655) 
+           oferecem excelente custo-benefício, destacando-se pela tecnologia de pontos quânticos (QLED) para cores vibrantes, HDR10+/Dolby Vision, e sistema Google TV com ampla biblioteca de apps. Contam com comandos de voz, processador AiPQ, HDMI 2.1, Wi-Fi dual band e Bluetooth 5.0+.
+        </div>
+        <div>
+            <h1>LG</h1>
+            <img src="Img/thum-1600x1062.jpg" alt="" />
+            <p>Principais recursos
+
+              Tecnologia Cores Dinâmicas QNED
+              Processador Alpha7 AI 4K Ger 8
+              Controle intuitivo com o controle remoto AI Magic: novo botão AI, comandos de voz e funções de arrastar e soltar.
+              Alta resolução em uma enorme tela de TV ultragrande
+              webOS Programa Re:New: Novas atualizações por 5 anos e segurança premiada</p>
+        </div>
+        <div>
+          <h1>Philco</h1>
+          <img src="Img/sony.png" alt="" />
+          <p> Tela 50" 4K LED: Imagens vividas e detalhadas com cores impressionantes
+            • Dolby Audio: Som imersivo que transforma sua experiência em entretenimento
+            • Chromecast built-in: Acesso fácil a apps, conteúdos e controle por voz</p>
+        </div>
+        
+        <div>
+          <h1>sony</h1>
+          <img src="Img/sony2.png" alt="" />
+          <p>Luz e escuridão são controladas perfeitamente nesta TV 4K HDR com tecnologia X-tended Dynamic Range PRO de alto contraste. Veja mais detalhes em tudo que assistir.
+            Disponível em 139 cm (55"), 164 cm (65"), 189 cm (75”), 215 cm (85'')
+            High Dynamic Range 4K
+            Processador 4K HDR X1 Extreme
+            X-Motion Clarity™
+            Android TV™</p>
+        </div>
+      </div> 
+      
+      <script>
+
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu');
+        const linha1 = document.querySelector('.burger>div:first-child');
+        const linha2 = document.querySelector('.burger>div:nth-child(2)');
+        const linha3 = document.querySelector('.burger>div:last-child');
+        burger .addEventListener('click',()=>{
+          menu.classList.toggle('exibir');
+          linha1.classList.toggle('linha1');
+          linha2.classList.toggle('linha2');
+          linha3.classList.toggle('linha3');
+        }); 
+      </script>
+
+</body>
+</html>
