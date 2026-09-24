@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VF AUTO - Cadastro & Login</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="jQuery/jquery-4.0.0.min.js"></script>
+    <script src="jQuery/jquery.mask.js"></script>
+</head>
+<body>
+
+    <div class="topo">
+        <div class="logo-area">
+            <a href="http://127.0.0.1:5500/menu.html" target=""><img src="img/VFlogocar.jpeg" alt="Logo VF Auto" class="logo-img"></a>
+            <h1>VF AUTO</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="Motos.html" target="">Motos</a></li>
+            <li><a href="Carros.html" target="">Carros</a></li>
+            <li><a href="Vans.html" target="">Vans</a></li>
+            <li><a href="Caminhoes.html" target="">Caminhões</a></li>
+            <li><a href="Luxo.html" target="">Luxo</a></li>
+            <li><a href="pg_Uber.html" target="">Uber</a></li>
+            <li class="btn-inicio"><a href="menu.html" target="">Início</a></li>
+        </ul>
+    </div>
+
+    <div class="container-cadastro">
+        <div class="cadastro-card">
+            <div class="cadastro-header">
+                <h2>Faça seu Cadastro</h2>
+                <p>Preencha os dados abaixo para solicitar sua locação</p>
+            </div>
+            
+            <form>
+                <div class="form-group">
+                    <label for="idNome">Nome Completo</label>
+                    <input type="text" name="Nome" id="idNome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Sexo</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="Sexo" id="idSexof" value="f">
+                            <span>Feminino</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="Sexo" id="idSexoM" value="m">
+                            <span>Masculino</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Já atingiu a maioridade? (+18)</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="Idade" id="idAges" value="s">
+                            <span>Sim</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="Idade" id="idAgen" value="n">
+                            <span>Não</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="idBairro">Bairro / Distrito (São Paulo - SP)</label>
+                    <input type="text" id="idBairro" list="ListaBairros" placeholder="Selecione ou digite o bairro" required>
+                    
+                    <datalist id="ListaBairros">
+                        <option value="Água Rasa"></option>
+                        <option value="Alto de Pinheiros"></option>
+                        <option value="Anália Franco"></option>
+                        <option value="Aricanduva"></option>
+                        <option value="Artur Alvim"></option>
+                        <option value="Barra Funda"></option>
+                        <option value="Bela Vista"></option>
+                        <option value="Belém"></option>
+                        <option value="Bom Retiro"></option>
+                        <option value="Brás"></option>
+                        <option value="Brasilândia"></option>
+                        <option value="Butantã"></option>
+                        <option value="Cachoeirinha"></option>
+                        <option value="Cambuci"></option>
+                        <option value="Campo Belo"></option>
+                        <option value="Campo Limpo"></option>
+                        <option value="Campo Grande"></option>
+                        <option value="Cangaíba"></option>
+                        <option value="Capão Redondo"></option>
+                        <option value="Carrão"></option>
+                        <option value="Casa Verde"></option>
+                        <option value="Cidade Ademar"></option>
+                        <option value="Cidade Dutra"></option>
+                        <option value="Cidade Líder"></option>
+                        <option value="Cidade Tiradentes"></option>
+                        <option value="Consolação"></option>
+                        <option value="Ermelino Matarazzo"></option>
+                        <option value="Freguesia do Ó"></option>
+                        <option value="Grajaú"></option>
+                        <option value="Guaianases"></option>
+                        <option value="Iguatemi"></option>
+                        <option value="Ipiranga"></option>
+                        <option value="Itaim Bibi"></option>
+                        <option value="Itaim Paulista"></option>
+                        <option value="Itaquera"></option>
+                        <option value="Jabaquara"></option>
+                        <option value="Jaçanã"></option>
+                        <option value="Jaguara"></option>
+                        <option value="Jaguaré"></option>
+                        <option value="Jardim Ângela"></option>
+                        <option value="Jardim Helena"></option>
+                        <option value="Jardim Paulista"></option>
+                        <option value="Jardim São Luís"></option>
+                        <option value="José Bonifácio"></option>
+                        <option value="Lajeado"></option>
+                        <option value="Lapa"></option>
+                        <option value="Liberdade"></option>
+                        <option value="Limão"></option>
+                        <option value="Mandaqui"></option>
+                        <option value="Marsilac"></option>
+                        <option value="Moema"></option>
+                        <option value="Mooca"></option>
+                        <option value="Morumbi"></option>
+                        <option value="Parelheiros"></option>
+                        <option value="Pari"></option>
+                        <option value="Parque do Carmo"></option>
+                        <option value="Pedreira"></option>
+                        <option value="Penha"></option>
+                        <option value="Perdizes"></option>
+                        <option value="Perus"></option>
+                        <option value="Pinheiros"></option>
+                        <option value="Pirituba"></option>
+                        <option value="Ponte Rasa"></option>
+                        <option value="Raposo Tavares"></option>
+                        <option value="Republica"></option>
+                        <option value="Rio Pequeno"></option>
+                        <option value="Sacomã"></option>
+                        <option value="Santa Cecília"></option>
+                        <option value="Santana"></option>
+                        <option value="Santo Amaro"></option>
+                        <option value="São Domingos"></option>
+                        <option value="São Lucas"></option>
+                        <option value="São Mateus"></option>
+                        <option value="São Miguel Paulista"></option>
+                        <option value="São Rafael"></option>
+                        <option value="Sapopemba"></option>
+                        <option value="Saúde"></option>
+                        <option value="Sé"></option>
+                        <option value="Socorro"></option>
+                        <option value="Tatuapé"></option>
+                        <option value="Tremembé"></option>
+                        <option value="Tucuruvi"></option>
+                        <option value="Vila Andrade"></option>
+                        <option value="Vila Curuçá"></option>
+                        <option value="Vila Formosa"></option>
+                        <option value="Vila Guilherme"></option>
+                        <option value="Vila Jacuí"></option>
+                        <option value="Vila Maria"></option>
+                        <option value="Vila Mariana"></option>
+                        <option value="Vila Matilde"></option>
+                        <option value="Vila Medeiros"></option>
+                        <option value="Vila Olimpia"></option>
+                        <option value="Vila Prudente"></option>
+                        <option value="Vila Sônia"></option>
+                    </datalist>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="idCEP">CEP</label>
+                        <input type="tel" id="idCEP" placeholder="00000-000" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idCpf">CPF</label>
+                        <input type="tel" id="idCpf" placeholder="000.000.000-00" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="idEmail">E-mail</label>
+                        <input type="email" id="idEmail" placeholder="seuemail@provedor.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idTelefone">Telefone / WhatsApp</label>
+                        <input type="tel" id="idTelefone" placeholder="(11) 99999-9999" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="idCNH">Categoria da CNH</label>
+                    <input type="text" id="idCNH" list="listaCNH" placeholder="Selecione a categoria habilitada" required>
+                    <datalist id="listaCNH">
+                        <option value="ACC: Ciclomotores (até 50 cilindradas)."></option>
+                        <option value="A: Motos, motonetas e triciclos."></option>
+                        <option value="B: Carros de passeio e caminhonetes (até 8 lugares)."></option>
+                        <option value="C: Caminhões e veículos de carga (acima de 3,5 toneladas)."></option>
+                        <option value="D: Ônibus, micro-ônibus e vans (mais de 8 passageiros)."></option>
+                        <option value="E: Veículos com trailers, carretas e articulações pesadas."></option>
+                        <option value="AB: Moto + Carro de passeio."></option>
+                        <option value="AC: Moto + Caminhão."></option>
+                        <option value="AD: Moto + Ônibus/Vans."></option>
+                        <option value="AE: Moto + Carreta/Veículos articulados."></option>
+                    </datalist>
+                </div>
+
+                <button type="submit" class="btn-enviar-form">Concluir Cadastro</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $('#idTelefone').mask('(00) 00000-0000');
+            $('#idCpf').mask('000.000.000-00');
+            $('#idCEP').mask('00000-000');
+        });
+    </script>
+       
+</body>
+</html>
