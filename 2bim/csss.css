@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: lavi;
+    src: url(fontes/Oswald-VariableFont_wght.ttf);
+}
+body{
+    background-color: rgb(221, 237, 250);
+    background-image: url(img/imghack2.jpeg);
+    background-size: cover;
+}
+
+.title h1{
+    text-align: center;
+    margin: 0px, 10px, 0px, 10px;
+    align-items: center;
+    background-color: rgb(62, 156, 238);
+box-shadow: 3px 3px 3px black;
+}
+
+a{
+    text-decoration: none;
+}
+
+form p{
+    font-size: 20px;
+    font-family: lavi;
+    text-align: center;
+}
+
+.central{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(151, 226, 231, 0.527);
+    border-radius: 50px;
+    margin: 80px;
+    
+}
+
+form input{
+    font-family: lavi;
+}

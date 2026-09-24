@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="jQuery/jquery-4.0.0.min.js"></script>
+    <script src="jQuery/jquery.mask.js"></script>
+    <link rel="stylesheet" href="csss.css">
+</head>
+<body>
+     <div class="title"><h1>VF tec. e Informática</h1></div>
+
+     <div class="central">
+
+        <div>
+     
+    <h2>Contrata-se:</h2>
+    
+        <form>
+            <p>Qual vaga veio prestar?</p>
+            <p><input type="list" list="listaVagas"></p>
+            <datalist id="listaVagas">
+                <option value="Desenvolvedor de Sistemas."></option>
+                <option value="Programador."></option>
+                <option value="Ajudante Geral."></option>
+                <option value="Jovem Aprendiz (DS)."></option>
+                <option value="Jovem Apreniz (PA)."></option>
+                <option value="Jovem Aprendiz (AG)."></option>
+            </datalist>
+
+        <p>Nome:</p>
+        <p><input type="text" name="Nome" id="idNome"></p>
+
+        <p>Sexo:</p>
+        <p><input type="radio" name="Sexo" id="idSexof" value="f">
+        <label for="idSexof">Feminino</label></p>
+
+        <p><input type="radio" name="Sexo" id="idSexoM" value="m">
+        <label for="idSexoM">Masculino</label></p>
+
+        <p>Idade:</p>
+        <p>Já atingiu a maior idade ?(+18)</p>
+        <p><input type="radio" name="Idade" id="idAges" value="s">
+            <label for="idAges">Sim.</label></p>
+
+            <p><input type="radio" name="Idade" id="idAgen" value="n">
+                <label for="idAgen">Não.</label></p>
+              
+                <p>Bairro:</p>
+                <p><input type="list" list="ListaBairros">
+                  </div>  <datalist id="ListaBairros">
+                        <option value="Água Rasa"></option>
+                        <option value=" Anália Franco"></option>
+                        <option value=" Aricanduva"></option>
+                        <option value=" Artur Alvim"></option>
+                        <option value=" Belém"></option>
+                        <option value=" Brás"></option>
+                        <option value=" Cangaíba"></option>
+                        <option value=" Carrão"></option>
+                        <option value="Cidade Líder"></option>
+                        <option value="Cidade Tiradentes"></option>
+                        <option value="Ermelino Matarazzo"></option>
+                        <option value="Guaianases"></option>
+                        <option value="Iguatemi"></option>
+                        <option value="Itaim Paulista"></option>
+                        <option value="Itaquera"></option>
+                        <option value="Jardim Helena"></option>
+                        <option value="José Bonifácio"></option>
+                        <option value="Lajeado"></option>
+                        <option value="Mooca"></option>
+                        <option value="Pari"></option>
+                        <option value="Parque do Carmo"></option>
+                        <option value="Penha"></option>
+                        <option value="Ponte Rasa"></option>
+                        <option value="São Lucas"></option>
+                        <option value="São Mateus"></option>
+                        <option value="São Miguel Paulista"></option>
+                        <option value="São Rafael"></option>
+                        <option value="Sapopemba"></option>
+                        <option value="Tatuapé"></option>
+                        <option value="Vila Curuçá"></option>
+                        <option value="Vila Formosa"></option>
+                        <option value="Vila Jacuí"></option>
+                        <option value="Vila Matilde"></option>
+                        <option value="Vila Prudente"></option>
+                    </datalist>
+
+                <p>Email:</p>
+                <p><input type="email" id="idEmail"></p>
+
+                <p>Telefone:</p>
+                <p><input type="tel" id="idTelefone"></p>
+
+                <p>CPF:</p>
+                <p><input type="tel" id="idCpf"></p>
+
+                <p>Formação:</p>
+                <p><input type="list" list="ListaFormacao">
+                    <datalist id="ListaFormacao">
+                <option value="Ensino Fundamental 1 Incomp."></option>
+                <option value="Ensino Fundamental 1 Comp."></option>
+                <option value="Ensino Fundamental 2 Incomp."></option>
+                <option value="Ensino Fundamental 2 Comp."></option>
+                <option value="Ensino Médio Comp."></option>
+                <option value="Ensino Médio Incomp."></option>
+                    </datalist>
+               
+                <p>Experiência:</p>
+                <p><textarea name="Experiência" id="idExperiencia"></textarea></p>
+
+
+        </form>
+    </div>
+        <script>
+            $('#idTelefone').mask('(00) 00000-0000');
+        </script>
+        <script>
+             $('#idCpf').mask('000.000.000-00');
+        </script>
+     
+</body>
+</html>
